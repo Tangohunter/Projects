@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+}
+#header{
+    width:100%;
+    height:100vh;
+    background-image: url(images/img1.jpg);
+    background-size: cover ;
+    background-position: center;
+}
+.container{
+    padding: 10px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text h1{
+    font-size: 40px;
+    margin-top: 20px;  
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 1%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 20px;
+    font-family: sans-serif;
+     text-align: center;
+}
+ /* .about-col-2{
+    text-align: center;
+    font-size: 15px;} */ 
+
+/* ABOUT */
+#about{
+    padding: 80px 0;
+    color: white;
+    
+}
+h1{
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+/* BAKI 1 : image alignment set */
+.about-col-1 img{
+    width: 40%;
+    border-radius: 15%;
+    /* padding-top: 5%;
+    padding-left: 6%;
+    padding-right: 6%; */
+}
+.about-col-2{
+    /* flex-basis: 60%; */
+    text-align: center;
+}
+#about .container h1{
+    text-align: center;
+}
+.subtitle{
+    font-size: 35px;
+    font-weight: 600;
+    color: aliceblue;
+    font-family: sans-serif;
+    padding-bottom: 5%;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    justify-content: center;
+}
+.tab-links{
+    margin: 0px 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links ::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link ::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+}
+.tab-contents ul li span{
+    color: #ff004f;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* projects  */
+
+#services{
+    padding: 25px 0;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    margin-top: -275px;
+}
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 20px;
+}
+.service-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.service-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.service-list div a{
+    text-decoration: none;
+    color: #ff004f;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.service-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+/* skills */
+/* #Porfolio{
+    padding: 50px 0;
+} */
+
+/* Skills */
+#skills1{
+    padding: 25px 0;
+    padding-bottom: 10%;
+}
+ h1{
+    text-align: center;
+}
+
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10%;
+    transition: background 0.5s, transform 0.5s;
+}
+.service-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.service-list div a{
+    text-decoration: none;
+    color: #ff004f;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.service-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+/* more about me */
+.More h1{
+    padding-bottom: 5px;
+    text-align: center;
+}
+.features div{
+    padding: 10px 0;
+}
+.features div h2{
+    padding: 10px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-color: #ff004f;
+}
+.features div p{
+    text-align: left;
+    padding: 10px;
+}
+
+/* contact me */
+ #contact1{
+    padding: 25px 0 0;
+    /* padding-bottom: 10%; */
+}
+  h1{
+    text-align: center;
+} 
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius:0%;
+    width: 375px;
+    text-align: center;
+    transition: background 0.5s, transform 0.5s;
+}
+.service-list div h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.service-list div a{
+    text-decoration: none;
+    color: #ff004f;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.service-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+} */
+.btn.btn2{
+    display: inline-block;
+    background: #262626;
+}
+
+/* copywrite */
+.copywrite{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #262626;
+    font-weight: 300;
+     margin-top: 100px; 
+     /* margin-bottom: 100px;  */
+}
+/* css for small screen  */
+nav .fas{
+    display: none;
+} 
+@media only screen and(max-width: 600px){ 
+     nav .fas{
+        display: block;
+        font-size: 20px;
+    }
+    nav ul{
+        background: #262626;
+        position: fixed;
+        top: 0;
+        right:-200;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }  
+
+     nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .subtitle{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .copywrite{
+        font-size: 14px;
+    }
+}
