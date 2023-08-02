@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gunjan Joshi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ed11141a85.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#skills1">Skills</a></li>
+                    <li><a href="#more1">More</a></li>
+                    <li><a href="#contact1">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi I'm Gunjan Joshi</h1>
+                <p>A Information & Communication student passionate about programming and design</p>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <h1 class="subtitle">About Me</h1>
+            <div class="row">
+                <!-- <div class="about-col-1">
+                    <img src="">
+                </div> -->
+                <div class="about-col-2">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore culpa accusantium unde natus expedita sunt voluptatibus asperiores alias pariatur illo, aliquam quia quaerat fuga omnis soluta vero illum quos dicta delectus dolore a molestias ducimus nostrum? Illo rem, voluptates libero quos reprehenderit temporibus et magni quasi quae sapiente sint minus?, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iusto voluptas consectetur vitae blanditiis ea sapiente, magni in doloribus ullam iure facere odio corporis nemo, perspiciatis eius consequatur corrupti facilis.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Frontend</span><br>Web Development </li>
+                            <li><span>Figma</span><br>UI/UX </li>
+                            <li><span>HTML,css</span><br> something</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>Portfolio</span><br>Web Development </li>
+                            <li><span>Ablect</span><br>Website</li>
+                            <li><span>Fire base alaram system</span><br>A hardware-base project using Ardiuno</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>SSC(X) [2017-2018]</span><br>Kendriya Vidyalaya Junagadh </li>
+                            <li><span>HSC[2018-2020]</span><br>Eklavya Public School Junagagh </li>
+                            <li><span>BE in ICT[2020-2024]</span><br>Adani institute of infrastructure Ahmedabad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Ablect</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam commodi, ratione, rem optio blanditiis ipsum, sed quas odio nihil hic atque sapiente illum nesciunt eos?</p>
+                     <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Portfolio</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam commodi, ratione, rem optio blanditiis ipsum, sed quas odio nihil hic atque sapiente illum nesciunt eos?</p>
+                     <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-fire"></i>
+                    <h2>Fire base alaram system</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam commodi, ratione, rem optio blanditiis ipsum, sed quas odio nihil hic atque sapiente illum nesciunt eos?</p>
+                     <a href="#">Learn more</a>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <!-- Porfolio/ skills -->
+    <!-- <div id="Porfolio">
+        <div class="container">
+            <h1 class="subtitle">Skills</h1>
+            <div class="worklist"></div>
+        </div>
+    </div> -->
+
+    <!-- Skills -->
+    <div id="skills1">
+        <div class="container">
+            <h1 class="subtitle">Skills</h1>
+            <div class="service-list">
+                <div>
+                    <!-- <i class="fa-solid fa-user"></i> -->
+                    <h2>Web Development</h2>
+                    <p>I have decent knowledge on Front-end Development - HTML, CSS, JS</p>
+                     <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>Design</h2>
+                    <p>Canva, Figma</p>
+                     <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <!-- <i class="fa-solid fa-fire"></i> -->
+                    <h2>Programming</h2>
+                    <p>JAVA & Basic JS</p>
+                     <!-- <a href="#">Learn more</a> -->
+                </div>
+
+            </div>  
+        </div>
+    </div>
+    <!-- More about me -->
+    <div id="more1">
+        <div class="General">
+            <div>
+                <h1 class="More">More about me!</h1>
+                <div class="features">
+                <div>
+                    <h2>Technical Achievements</h2>
+                    <p>1. IITKGP Cmpus ambassador
+                        <br>
+                        2. Microsoft campus ambassador
+                        </p>
+                </div>
+                <div>
+                    <h2>Art & Culture</h2>
+                    <p>1. Professional Kathak classical Dance
+                        (completed 6 years in Kathak)
+                        <br>
+                        2. I have completed 3 years in Bharatnatyum classical Dance.
+                        </p>
+                </div>
+                <div>
+                    <h2>Atheletics</h2>
+                    <p>1. Champions of kho-kho'23 Adani institute
+                        <br>
+                        2. Atheletics including 100m,200m, Relay Race Champions.
+                        </p>
+                </div>
+                <div>
+                    <h2>Soft Skills</h2>
+                    <p>1. Good and efficient work
+                        ( problem solving, DSA) 
+                        <br>
+                        2. Creativity
+                        (Activly approching problem and finding solution with diff. approach)
+                        <br>
+                        3. Leadership skills, Teamwork
+                        </p>
+                </div>
+            </div>
+        </div>
+     </div>
+  </div>
+
+  <!-- Contact me -->
+  <div id="contact1">
+    <div class="container">
+        <h1 class="subtitle">Contact me</h1>
+        <div class="service-list">
+            <div>
+                <h2>Resume</h2>
+                <!-- <p>Download</p> -->
+                 <a href="images/Gunjan Joshi Resume.pdf" download class="btn btn2">Download</a>
+            </div>
+            <div>
+                <h2>EMAIL</h2>
+                <p>ghjoshi822@gmail.com</p>
+                 <!-- <a href="#">Learn more</a> -->
+            </div>        
+        </div>  
+    </div>
+    <div class="copywrite">
+        <P>copywrite @ Gunjan Joshi. All Rights Reseved.</P>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+       
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+        
+    </script>
+    
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
